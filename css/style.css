@@ -1,0 +1,335 @@
+body {
+    margin: 0; padding: 0; font-family: 'Mulish', sans-serif; font-size: 14px; font-weight: 400; background: #fff;
+}
+.hintouch-nav{ background: transparent !important; padding: 15px 10px; margin-top: -3px !important; position: absolute; top:0; left: 0; z-index: 3; width: 100%;}
+.hintouch-nav .nav-link{ color: #666 !important; font-size: 13px; margin: 0px 15px; }
+.btn-warning { background: #E2A217; color: #fff !important; border: none !important; }
+.nav-link.btn-warning { color: #E2A217 !important; font-size: 13px;  padding-left: 20px !important; padding-right: 20px !important; background: #fff; border-radius: 25px;
+                        box-shadow: 0px 0px 15px rgba(100, 100, 100, 0.3); }
+
+.hintouch-nav.hintouch-nav2{ background: #fff !important; }
+
+.btn-round{ border-radius: 30px;}
+.nav-upper{ text-transform: uppercase; font-weight: bold; }
+.hero{ background: #F8F8F8; height: 600px; overflow: hidden; color: #666; font-family: "Mulish"; position: relative;}
+.hero-inner{ background: transparent; height: 600px; width: 100%; display: flex; overflow: hidden; position: relative; align-items: center; }
+.hero h4{ font-size: 12px; color:#000; font-weight: 600; width: 100%; text-transform: uppercase; letter-spacing: 2px; padding-left: 3px; }
+.hero h3{ font-size: 34px; color: #000; font-weight: 600; width: 100%; padding-left: 0; margin-left: 0;}
+.hero p{ font-size: 18px; font-weight: 300; width: 100%;}
+.hero .btn-warning{ font-size: 14px; font-weight: 300;}
+
+.social-card{
+    background: #fff; padding-left: 0; border-radius: 30px; display: block; box-shadow: 0px 0px 25px rgba(150, 150, 150, 0.5); margin: 20px 0; font-size: 13px;
+}
+.social-image-overlay{ cursor: pointer; height: 250px; overflow: hidden; transition: all .2s; display: flex; justify-content: center; align-items: center; margin:0; border-top-left-radius: 30px; border-top-right-radius: 30px; position: absolute; top: 0; left: 0; width: 100%; z-index: 3; background: rgba(0, 0, 0, 0.2); }
+.social-image-overlay:hover{ background: rgba(0, 0, 0, 0.4); }
+.social-image{ height: 250px; overflow: hidden; display: block; margin:0; border-top-left-radius: 30px; border-top-right-radius: 30px; position: relative; }
+.social-image img{ height: 250px; object-fit: cover; }
+.text-red { color: #ff0000; }
+.text-gray { color: rgb(110, 110, 110); }
+.social-card .btn-circle { border: 3px solid #fff; transition: all .2s; width: 50px; height: 50px; border-radius: 50%; display: block; padding: 5px; display: flex; justify-content: center; align-items: center; color: #fff; }
+.social-card .btn-circle:hover { border: 3px solid #E2A217;  color: #E2A217; text-decoration: none; }
+.relative { position: relative; }
+
+.img-rounded{ border-radius: 25px;}
+
+.feature-card{
+    background: #fff; padding-left: 0; border-radius: 30px; display: block; box-shadow: 0px 0px 25px rgba(150, 150, 150, 0.5); margin: 20px 5px;
+}
+.feature-card p { color: #666 !important; }
+.feature-image-overlay{ cursor: pointer; height: 250px; overflow: hidden; transition: all .2s; display: flex; justify-content: center; align-items: center; margin:0; border-top-left-radius: 30px; border-top-right-radius: 30px; position: absolute; top: 0; left: 0; width: 100%; z-index: 3; background: rgba(0, 0, 0, 0.2); }
+.feature-image-overlay:hover{ background: rgba(0, 0, 0, 0.4); }
+.feature-image{ height: 300px; overflow: hidden; display: block; margin:0; border-top-left-radius: 30px; border-top-right-radius: 30px; position: relative; }
+.feature-image img{ height: 300px; width: 100%; object-fit: cover; }
+
+
+.hero .overlay{ background: rgba(9, 55, 129, 0.5); position: absolute; height: 630px; width: 100%; left: 0; top: 0; }
+
+.btn-white{ background: #fff; border-radius: 35px; position: relative; box-shadow: 0px 0px 15px rgba(100, 100, 100, 0.3); color: #333; padding: 8px 15px; font-size: 12px; }
+.btn-white span{ color:#8D8D8D; }
+.btn-white strong{ font-weight: 800; display: block; }
+.btn-white:hover{ background: #E2A217; color: #fff; }
+.btn-white:hover span{ color: #fff; }
+
+.btn-white .coming-soon{ border: 1px solid green; display: inline-block; position: relative; font-size: 8px; border-radius: 15px; padding: 1px 2px; color: green; background: #fff; }
+
+.faq{
+    background: #fff; color: #000; padding: 10px 10px; border-radius: 6px; cursor: pointer; margin: 15px 0px;
+}
+.faq .faq-question {
+    font-weight: bold; font-size: 13px; min-height: 35px;
+}
+.faq .faq-answer {
+    font-size: 14px; margin-top: 10px; border-top: 1px solid #ddd; padding: 10px 5px; display: none;
+}
+
+.socials a{ display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 50%; box-shadow: 0px 0px 15px rgba(150, 150, 150, 0.5); margin: 10px; color: #222; }
+.socials a:hover{ color: #888; text-decoration: none; }
+
+.text-slider h2{ font-size: 24px; }
+@keyframes sliding {
+    0% { transform: translateY(0px);  }
+    50% { transform: translateY(-20px) }
+    80% { transform: translateY(30px) }
+    100% { transform: translateY(0px) }
+}
+@keyframes sliding2 {
+    0% { transform: translateY(0px);  }
+    50% { transform: translateY(-35px) }
+    80% { transform: translateY(10px) }
+    100% { transform: translateY(0px) }
+}
+
+.gray{ background: #F2F2F2; display: block; margin: 0px; padding: 50px 0px }
+.darker-gray{ background: #E0E0E0; }
+mark{ background: transparent; color: #E2A217; padding: 0;}
+
+.orange-bg{ background: #E2A217; padding: 50px 0px; display: block; min-height: 400px; position: relative;}
+.orange-map{ background: url('../img/hero.png') no-repeat center; filter: opacity(0.6); display: block; position: absolute; width: 100%; left: 0; top:0; min-height: 400px; z-index: 2;}
+.orange-bg-content{ position: relative; z-index: 4; }
+.orange-bg .form-control{ padding: 15px 35px; min-height: 55px; border-radius: 40px; margin-top: 30px; }
+
+
+.about-hero{ height: 580px; text-align: center; color: #fff; background: url('../img/about-us-hintouch.jpg'); background-size: cover; background-position: center; overflow: hidden; display: block; margin:0;  position: relative; }
+.about-hero h3{ font-size: 38px; }
+.about-hero-overlay{ cursor: pointer; height: 580px; overflow: hidden; transition: all .2s; display: flex; justify-content: center; align-items: center; margin:0;  position: absolute; top: 0; left: 0; width: 100%; z-index: 4; background: rgba(0, 0, 0, 0.4); }
+.sm-text{ line-height: 40px; font-size: 15px;}
+
+ul.orange-bullet {
+    list-style: none; /* Remove default bullets */
+    margin: 0; padding: 10px; padding-left: 20px;
+  }
+ul.orange-bullet li{ margin-bottom: 5px; }
+ul.orange-bullet li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: orange; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  font-size: 18px;
+}
+
+.slick-slide{ margin: 0px 10px;}
+.slick-prev:before, .slick-next:before{ color: #E2A217 !important; }
+
+
+/* ----------------------------------------------------------------
+   SLICK SLIDER
+   ----------------------------------------------------------------*/
+
+.slick-slide {
+    margin: 0px 20px;
+    overflow: hidden;
+    
+    max-height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slick-slide img {
+    width: 100%;
+    box-shadow: 2px 3px 5px rgba(150, 150, 150, 0.5); margin-bottom: 10px;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: #E2A217;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen   
+and (min-device-width : 280px)   
+and (max-device-width : 500px)  
+{ 
+
+    .hintouch-nav .nav-link { font-size: 14px !important; padding: 10px 0px; color: #333 !important; border-bottom: 1px solid #ddd;}
+    .hintouch-nav .navbar-collapse { margin-top: 0px !important; background: #fff; padding: 15px;}
+    .hintouch-nav .nav-link.btn-warning { box-shadow: none; padding: 10px 0px !important; color: #333 !important; font-size: inherit !important; }
+
+    .hero{ height: 680px; width: 100%;}
+    .hero-inner{ height: 680px; align-items: flex-start; padding: 100px 15px; text-align: center; width: 100%; }
+    .hero h3{ font-size: 34px; }
+    .hero p{ font-size: 16px; font-weight: 300; width: 100%;}
+    .hero img{ transform: scale(150%) !important; margin-top: 20px;}
+    
+    .gray, .how-it-works{ padding-left: 15px; padding-right: 15px;}
+    
+    .btn-white{ border-radius: 30px; padding: 10px 15px; font-size: 12px; margin: 5px 0px; }
+
+    .social-card, .feature-card{ margin: 10px; }
+    .social-image-overlay{ height: 400px; }
+    .social-image{ height: 400px; }
+    .social-image img{ height: 400px; }
+
+    .text-center-mobile{ text-align: center !important; }
+    .orange-bg{ padding: 50px 30px; }
+    .orange-bg h3{ font-size: 20px; font-weight: bold; }
+    .orange-bg h4{ font-size: 18px; font-weight: normal; }
+
+    .text-slider h2{ font-size: 20px; }
+
+
+    
+} 
+
+@media only screen   
+and (min-device-width : 500px)   
+and (max-device-width : 767px)  
+{ 
+    .hintouch-nav .nav-link { font-size: 14px !important; padding: 10px 0px; color: #333 !important; border-bottom: 1px solid #ddd;}
+    .hintouch-nav .navbar-collapse { margin-top: 0px !important; background: #fff; padding: 15px;}
+    .hintouch-nav .nav-link.btn-warning { box-shadow: none; padding: 10px 0px !important; color: #333 !important; font-size: inherit !important; }
+
+    .hero{ height: 680px; width: 100%;}
+    .hero-inner{ height: 680px; align-items: flex-start; padding: 100px 15px; text-align: center; width: 100%; }
+    .hero h3{ font-size: 34px; }
+    .hero p{ font-size: 18px; font-weight: 300; width: 100%;}
+    
+    .gray, .how-it-works{ padding-left: 15px; padding-right: 15px;}
+    
+    .btn-white{ border-radius: 30px; padding: 10px 15px; font-size: 12px; margin: 5px 0px; }
+    
+} 
+
+@media only screen   
+and (min-device-width : 767px)   
+and (max-device-width : 1000px)  
+{
+    .phone-container{ right: 20px; top: 50px; }
+    .phone-container .phone2{ left: 80px; top: 10px; animation: sliding2 3.8s infinite linear ;}
+} 
+
+/* For 1366 Resolution */  
+@media only screen   
+and (min-width: 1000px)   
+and (max-width: 1369px)  
+{ 
+    .aftamaat-nav .nav-link{ font-size: 10px;}
+    .phone-container{ right: -60px; top: 0px; }
+}  
+
+@media only screen   
+and (min-width: 1370px)  
+and (max-width: 1605px)  
+{ 
+
+}  
+
